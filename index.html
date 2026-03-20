@@ -1,9 +1,136 @@
-<link rel="stylesheet" type="text/css" href="./style.css" />
 <html>
-  <head>
-    <title>My Web Page</title>
-  </head>
-  <body>
-    <h1>Hello!</h1>
-  </body>
+<head>
+  <title>IxD Project – STARS Exemplars Flow</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+    header { background: #222; color: #fff; padding: 1rem; }
+    nav a { color: #fff; margin-right: 1rem; text-decoration: none; font-weight: bold; }
+    main { padding: 2rem; }
+    section { margin-bottom: 4rem; }
+    h1, h2, h3 { margin-top: 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 0.6rem; vertical-align: top; }
+    th { background: #f2f2f2; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#analysis">User &amp; Task Analysis</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="intro">
+  <h1>Interaction Design Project – STARS</h1>
+  <h2>Introduction</h2>
+  <p>
+	STARS is a web platform where teachers create assignments and students submit their work. They then can recieve feedback through peer reviews, teacher assessment and AI evaluation.
+  </p>
+  <p>
+    My assigned flow is <strong>“Practice grading exemplars + Understand your progress.”</strong>
+    In this flow, Lecturers open exemplar entries and review them. They are expected to learn what makes a strong or weak submission while tracking their own development. This flow matters as it is a part of the IxD26 end of year project as well as to help students build assessment skills and understand their progress across competencies.
+  </p>
+</section>
+
+<section id="analysis">
+  <h2>User &amp; Task Analysis</h2>
+
+  <h3>Flow 1 – Overview</h3>
+  <table>
+    <tr><th>Flow name</th><td>Practice Grading Exemplars &amp; Understanding Progress</td></tr>
+    <tr><th>User role</th><td>Lecturer</td></tr>
+    <tr><th>Trigger</th><td>The student wants to review exemplar submissions to understand what makes a strong or weak profile.</td></tr>
+    <tr><th>End state</th><td>The student understands differences between good and poor examples and gains insight into their own skill development.</td></tr>
+  </table>
+
+  <h3>Flow 1 – Step Table</h3>
+  <table>
+    <tr>
+      <th>Number</th><th>User Action</th><th>System Response</th><th>User Goal</th><th>Pain Point/issue?</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Lecturer navigates to the “Exemplars” section.</td>
+      <td>System loads a list of exemplar names.</td>
+      <td>Access exemplar materials.</td>
+      <td>Yes — unclear what this section contains or what the exemplars are.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Lecturer clicks an exemplar name.</td>
+      <td>A profile card opens with picture, name, and info.</td>
+      <td>View the exemplar.</td>
+      <td>No.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Lecturer scrolls through the profile card.</td>
+      <td>Static information shown with no guidance.</td>
+      <td>Understand quality of example.</td>
+      <td>No.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Lecturer returns to the list.</td>
+      <td>List reloads.</td>
+      <td>Compare examples.</td>
+      <td>No.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Lecturer opens another exemplar.</td>
+      <td>Another similar profile card appears.</td>
+      <td>Identify differences.</td>
+      <td>No.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Lecturer looks for a grading checklist.</td>
+      <td>Checklist appears but isn't interactable.</td>
+      <td>Practice assessment skills.</td>
+      <td>Yes — Can't use checklist or submit review.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Lecturer looks for progress tracking.</td>
+      <td>No progress indicators shown.</td>
+      <td>Understand progress.</td>
+      <td>Yes — no feedback.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Lecturer leaves the section.</td>
+      <td>No completion confirmation.</td>
+      <td>Know when finished.</td>
+      <td>Yes — unclear end state.</td>
+    </tr>
+  </table>
+
+  <h3>Pain Point Log</h3>
+  <table>
+    <tr>
+      <th>Number</th><th>Flow</th><th>When in the flow?</th><th>What happened?</th><th>Why is this a problem?</th><th>Severity</th>
+    </tr>
+    <tr><td>1</td><td>Exemplars</td><td>Step 1</td><td>The term is "Exemplars' is unclear</td><td>Users don't know what this section contains or what they're expected to do</td><td>Medium</td></tr>
+    <tr><td>2</td><td>Exemplars</td><td>Step 2</td><td>Expected an assignment or artefact but a profile card appears instead</td><td>Breaks user expectations and creates confusion about the purpose of the page.</td><td>High</td></tr>
+    <tr><td>3</td><td>Exemplars</td><td>Step 3</td><td>No labels or indicators explaining what makes a good or bad example.</td><td>Users cannot learn from the exemplar because the level of quality needed is not communicated</td><td>High</td></tr>
+    <tr><td>4</td><td>Exemplars</td><td>Step 3</td><td>No grading chechlist or assessment tool appears</td><td>The page is meant to support practice grading but the tools are missing</td><td>High</td></tr>
+    <tr><td>5</td><td>Exemplars</td><td>Step 5</td><td>Cards look identical.</td><td>Hard to compare quality.</td><td>Medium</td></tr>
+    <tr><td>6</td><td>Exemplars</td><td>Step 6</td><td>No instructions.</td><td>User unsure what to do.</td><td>Medium</td></tr>
+    <tr><td>7</td><td>Exemplars</td><td>Step 7</td><td>No progress tracking.</td><td>User cannot understand progress.</td><td>High</td></tr>
+    <tr><td>8</td><td>Exemplars</td><td>Step 8</td><td>No confirmation or end state after viewing exemplars.</td><td>User unsure if finished.</td><td>Medium</td></tr>
+    <tr><td>9</td><td>Exemplars</td><td>Navigation</td><td>Back resets list.</td><td>Extra steps.</td><td>Low</td></tr>
+    <tr><td>10</td><td>Exemplars</td><td>Overall</td><td>No indication of good/poor examples.</td><td>User cannot learn assessment skills.</td><td>High</td></tr>
+  </table>
+
+</section>
+
+</main>
+
+</body>
 </html>
