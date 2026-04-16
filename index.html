@@ -27,6 +27,7 @@
   <h1>Interaction Design Project – STARS</h1>
   <h2>Introduction</h2>
   <p>
+  <h3>Author: Benjamin Bolger - C00324085</h3>
 	STARS is a web platform where teachers create assignments and students submit their work. They then can recieve feedback through peer reviews, teacher assessment and AI evaluation.
   </p>
   <p>
@@ -127,6 +128,10 @@
   
   <h3>Flow Summary</h3>
 <p>
+	<h4>Top Three Issues:</h4>
+	1. Missing Interactive Grading Checklist<br>
+	2. No Progress tracking or skill feedback<br>
+	2. Exemplars are not labelled as good or poor<br><br>
   The exemplar flow allows students to open and review example profile cards, but the purpose of the task is unclear from the very beginning. 
   Instead of seeing assessable artefacts, users encounter static profile cards with no labels, instructions, or indicators of quality, making it difficult to understand what they are supposed to learn. 
   The absence of grading tools, progress tracking, or a clear completion state means the user cannot practise assessment skills or understand their development, even though this is the stated goal of the flow. 
@@ -135,67 +140,77 @@
 
 </section>
 <section id="evaluation">
-  <h2>Interface Evaluation (Week 2)</h2>
+  <h2>Interface Evaluation</h2>
   <h3>Heuristic Mapping</h3>
 <table>
   <tr>
     <th>Number</th>
     <th>Pain Point</th>
     <th>Nielsen Heuristic</th>
+	<th>Severity</th>
   </tr>
 
   <tr>
     <td>1</td>
     <td>“Exemplars” term is unclear</td>
     <td>H2 - Match between system and real world</td>
+	<td>Medium</td>
   </tr>
 
   <tr>
     <td>2</td>
     <td>Expected assignment but got a profile card instead</td>
     <td>H2 - Match between system and real world</td>
+	<td>High</td>
   </tr>
 
   <tr>
     <td>3</td>
     <td>No labels for good or bad examples</td>
     <td>H1 - Visibility of system status and H6 — Recognition over recall</td>
+	<td>High</td>
   </tr>
 
   <tr>
     <td>4</td>
     <td>No grading checklist or assessment tools included</td>
     <td>H1 - Visibility of system status</td>
+	<td>High</td>
   </tr>
 
   <tr>
     <td>5</td>
     <td>Cards look identical and no default comparison</td>
     <td>H4 - Consistency and standards</td>
+	<td>Medium</td>
   </tr>
 
   <tr>
     <td>6</td>
     <td>No instructions or guidance at all</td>
     <td>H10 - Help and documentation</td>
+	<td>Medium</td>
   </tr>
 
   <tr>
     <td>7</td>
     <td>No progress tracking</td>
     <td>H1 - Visibility of system status</td>
+	<td>High</td>
   </tr>
 
   <tr>
     <td>8</td>
     <td>No completion confirmation when finished an exemplar</td>
     <td>H1 - Visibility of system status</td>
+	<td>Medium</td>
   </tr>
 
   <tr>
     <td>9</td>
     <td>No indication of good or poor examples</td>
     <td>H6 - Recognition over recall</td>
+	<td>High</td>
   </tr>
 </table>
 
@@ -219,20 +234,49 @@
 	Without clear indicators, the user can't recognise the difference between good and poor work.
 	when redone, the page should clearly label each exemplar and highlight what makes a good exemplar for the user to base their correcting off of.
 </p>
+
+  <div class="sketch-screenshot">
+    <figure>
+      <img src="Sketches.jpg" alt="Sketch Screenshot" width="35%" height="75%">
+      <figcaption>This is a photograph of my handdrawn sketches detailing what I will change when making my prototype.</figcaption>
+    </figure>
 	
 </section>
 
 <section id="design">
-  <h2>Design Proposals (Week 3)</h2>
-  <p>Placeholder - to be completed in Week 3.</p>
+  <h2>Design Proposals</h2>
+  <h3>Proposals</h3>
+  <h4>Solution 1</h4>
+  <p>The problem that needs to be addressed is that the checklist shows buttons but you can't interact with them. The change here is simple and it is to make the buttons interactable and selectable. This is to stop completely throwing off users and allowing them to complete the flow where they previously could not. There is no trade off in this situation thankfully, only improvements.</p>
+	
+	<h4>Solution 2</h4>
+	<p>The problem that needs to be addressed is there is no feedback during the flow, the user has no idea if they are improving in grading. The solution here is too show an accuracy of each grading submitted on the submit confirmation page. This rationally makes sense because otherwise the lecturer could keep submitting poor grading quality without even knowing. There is no trade offs here and only improvements except for a tiny bit more cluttered submission confirmation screen.
+	
+	<h4>Solution 3</h4>
+	<p>The problem that needs to be addressed here is that all exemplars look the same and are not labelled as good or poor examples. This forces the user to guess if an exemplar is good or bad while learning. The simple fix would be to lable some as good or bad depending on the stage of learning. Not all as the user still has to think for themselves and grade them. This rationally makes sense as they have a basis to learn. This issue and solution goes in tandem with issue and solution 2. There is the trade off that the user is given hints to what is right and wrong which possibly might skew learning results. I still do believe this is neccessary.</p>
+  <h3>Peer Review</h3>
+  <div class="peer-review-screenshot">
+    <figure>
+      <img src="PeerReviewPage1.jpg" alt="Peer Review Screenshot1" width="35%" height="75%">
+      <figcaption>This is page 1 of my peer review sheet written and photographed by my reviewer.</figcaption>
+    </figure>
+	
+	<figure>
+      <img src="PeerReviewPage2.jpg" alt="Peer Review Screenshot2" width="35%" height="75%">
+      <figcaption>This is page 2 of my peer review sheet written and photographed by my reviewer.</figcaption>
+    </figure>
+	
+  </div>
 </section>
 
 <section id="prototype">
-  <h2>Prototype (Week 3)</h2>
+  <h2>Prototype</h2>
 
   <h3>Figma Prototype Link</h3>
   <p>
     <a href="https://www.figma.com/site/x7SiOEfL1lXHusZqxkVK31/IxD-BenjaminBolger-ChecklistH1?t=coqX4npTORbQmkJ4-1" target="_blank">View Figma Prototype</a>
+	Note: Some functions not completely working in Figma due to limitations with software including checklist and grading confirmation. <br>
+	The solution I decided to prototype is solution 1, I also added some extra features and fixes that I thought and conveyed when doing my sketches.
   </p>
 
   <h3>Annotated App Screenshots (2)</h3>
@@ -276,13 +320,156 @@
 
 
 <section id="usertest">
-  <h2>User Test (Week 4)</h2>
-  <p>Placeholder - method, prompts, findings, and reflection will go here.</p>
+  <h2>User Test</h2>
+
+  <h3>Method</h3>
+  <p>
+  The test I ran was the participant using stars to naviagate and grade a students work they sent in. The participant was a lecturer attempting to grade a students work. They tested the flow of "Grading an Exemplar".
+  </p>
+
+  <h3>Test</h3>
+  
+  <div class="test-screenshots">
+    <figure>
+      <img src="Consent Form.jpg" alt="Consent Form Screenshot" width="35%" height="75%">
+      <figcaption>Consent form written and sent to me by the tester</figcaption>
+    </figure>
+
+    <figure>
+      <img src="SessionScript.jpg" alt="Session Script Screenshot" width="35%" height="75%">
+      <figcaption>A photo of my handwritten session script used for the prototype review.</figcaption>
+    </figure>
+  </div>
+  <p>
+  <h3>Oberservation Log</h3>
+<table class="observation-log">
+  <tr>
+    <th>#</th>
+    <th>Task / Step</th>
+    <th>What the tester did</th>
+    <th>Said or expressed</th>
+    <th>Pass / Struggle / Fail</th>
+  </tr>
+  <tr><td>1</td><td>Click an exemplar to begin grading</td><td>Paused momentarily on the page</td><td>Expressed possible confusion with where to click next</td><td>STRUGGLE</td></tr>
+  <tr><td>2</td><td>Click Figma link</td><td>Tester tried to click the figma link at the top</td><td>no expression but kew what to do</td><td>PASS</td></tr>
+  <tr><td>3</td><td>Read Grading Questions</td><td>Tester took the expected time to read the question, no longer</td><td>Tester showed understanding meaning text was clear and legible</td><td>PASS</td></tr>
+  <tr><td>4</td><td>Reading text on grading page</td><td>Stared at the page momentarily</td><td>tester said "All the text is the same... very bold"</td><td>FAIL</td></tr>
+  <tr><td>5</td><td>Using checklist boxes for grading</td><td>Used them with ease, selected multiple boxes (limitation of Figma)</td><td>tester said "that shouldn't happen"</td><td>PASS (Limitation of Figma I couldn't fix)</td></tr>
+  <tr><td>6</td><td>Understand grading saved notification</td><td>Viewed "Grading Saved" text when checking boxes</td><td>Made a comment that the text stayed static and didnt update</td><td>PASS (Another limitation of Figma I couldn't fix</td></tr>
+  <tr><td>7</td><td>Locating the submit button</td><td>Tester found the submit button with ease</td><td>Made no comment but showed understanding</td><td>PASS</td></tr>
+  <tr><td>8</td><td>Viewing and understanding submit confirmation page</td><td>Tester viewed and understood the page</td><td>Tester made a face at the confirmation submission page, likely due to overly large text</td><td>FAIL</td></tr>
+  <tr><td>9</td><td>Click "return to exemplars" button</td><td>Tester did as such with no issue</td><td>Made the comment "It loops back to the start well"</td><td>SUCCESS</td></tr>
+</table>
+
+  <br>
+  <h3>Findings Log</h3>
+  <table class="findings-summary">
+  <tr>
+    <th colspan="1">Post-Test Findings Summary</th>
+  </tr>
+
+  <tr><td><h4>What did the tester complete successfully?</h4><br>Tester clicked the figma link successfully even though it was not functional in figma due to limitations. The tester then went on to successfully read the questions, use the checklist for grading, find the submit button, click the submit button, read the confirmation screen and come back full circle to the first page where they started.</td></tr>
+  <tr><td><h4>Where did they hesitate or struggle?</h4><br>Tester struggled momentarily to distinguish clickable student names on the first page. They also expressed issues with the grading saved text not updating, all of the text being bold and finally made a face at the submission confirmation screen.</td></tr>
+  <tr><td><h4>Where did they fail or give up?</h4><br>Tester did not fail as such with anything or give up, they only struggled to understand certain elements as mentioned in the above section.</td></tr>
+  <tr><td><h4>Most useful thing they said during think aloud?</h4><br>The most useful thing said during think aloud was "All the text is the same... very bold". This was helpful as I likely would have never known. This issue is something almost impossible to pinpoint with expressions so this was easily the most helpful and helped me to identify a core issue.</td></tr>
+  <tr><td><h4>Most useful thing they said during debrief</h4><br>During the debrief, they elaborated on the text issue even more. They explained that the text felt extremely linear and also harsh on the eyes against the white background. They suggested that the text for the questions be made into regular and the bold kept for the submit button, grading saved notification and the checklist headers. They also made the comment of "Half the size of the confirmation pop thing".</td></tr>
+  <tr><td><h4>Did your top 3 issues from Week 2 show up?</h4>
+      <br>The test did in fact confirm the three week 2 issues, the issues I identified in week 2 did not appear again therefore meaning I found and fixed them appropriately.</td></tr>
+  <tr><td><h4>Did any NEW issues appear that you hadn’t identified?</h4><br>Yes, after fixing many issues, three more issues appeared during the test of the prototype. The first issue being the contrast between clickable options on the exemplars list page.The second issue was too much of the text being bold and as described /by the tester, too harsh on the eyes. The last issue was the overly large confirmation popup on the last page. It was too abrupt and large, essentially scaring and overwhelming the user.</td></tr>
+  <tr><td><h4>Does this change your design? If so, how?</h4><br>Yes, this will definitely change the overall look of the design. My design will change by adding extra contrast to the buttons on the first page to properly define clickable elements. To fix the issue of too much bold text, I will take my participants advice and change the question text from bold to regular while keeping the rest of the text bold. Lastly I will reduce the size of the popup confirmation text to be less abrupt and overwhelming to the user while still conveying relevant information.</td></tr>
+</table>
+  </p>
+
+  <h3>Reflection</h3>
+  <p><br>
+  I was suprised that the participant did not like the all bold text on the second page (checklist page). I'm quite fond of bold text and find it easier to read and focus on with my attention span. Clearly this is not the same for everyone.
+  I would certainly change the exemplar entries on the first page (Gradeable exemplars list) to be more defined against the background. I would also change the submission confirmed text to be less abrupt and large to avoid jumpscaring or overwhelming the user. This would be better fit in a video game as a splash screen and not a website for lecturers. I am still unsure whether I would change the bold on page 2. From my research, people tend to precieve bold text as easier to read, potentially removing somebold might improve the accessibiliy of the prototype.
+  </p>
 </section>
 
 <section id="reflection">
-  <h2>Reflection (Week 4)</h2>
-  <p>Placeholder - final reflection will go here.</p>
+  <h2>Reflection</h2>
+
+  <h3>What I Discovered</h3>
+  <p>I think out of everything I discovered whilst making and presenting this project, the most eye-opening was that no matter how much you improve something, someone can take a look at it and find more improvements. Half of the lesson here is about finding issues, identifying them and then taking measures and implementations to fix. The other half is that there will always be more improvements that can be made to boost usability and accessibility for users. This becomes apparent during peer reviews when you think you've thought of 
+  everything, your peer finds something new to improve upon or an exisiting issue entirely, or an issue you believed to be acceptable but others may not. This was by far the most interesting part of the project I discovered and it proves the need for 
+  users and testers to constantly analyze accessibility and usability in games, websites and software.</p>
+
+  <h3>Heuristic Evaluation & User Test</h3>
+  <p>My heuristic evaluation and user test compoletely agreed thankfully. All issues I identified were found during the user test and were solved in my prototype. However, new issues did arise after the prototype test such as too much bold test, the contrast betw een interactable elements and background being skewed, and the overly large popup notification. These are issues I would fix if I was to complete another prototype.</p>
+
+  <h3>What I Would Change</h3>
+  <p>If I had one more week, I would test my prototype and evaluate issues the same as I did for the original website back in Week 1 and 2, and then repeat the process. This would double the project but It would've certainly been interesting to find issues
+  I overlooked the first time. As I said above, finding issues after you think you've found all the issues is extremely interesting to me as its a challenge to best your own record in a way. This is what I would do with another peer review alongside it. sub-secondly, I would also flesh out some more of the text in the project and go more broad in some areas. I believe I was a bit afraid to veer too of course with paragraphs and captions to avoid losing marks for waffle, but looking back I believe in this case it may have been useful to the reader and would improve my own skills.</p>
+
+  <h3>What I'd Do Differently Next Time</h3>
+  <p>If I was to restart from week 1, I would love to attain a different flow. I ultimately found my flow compared to others a little bit more boring and lackluster. This may have also been caused by me going of course and interpreting the meaning and direction of my flow differently compared to others with the same topic. I now know that I was never meant to go to the Exemplars tab in stars and analyse there, but rather I was meant to go to practise and conduct my flow there. This changed up my project compared to others but I would certainly try to stick to the original plan and pay more attention in the future. For next time, I would like to have been tasked with submitting something for others to review and grade but my flow was out of my control sadly.
+  
+  <h3>Final Report Checklist</h3>
+
+<table class="final-report-checklist">
+  <tr>
+    <th>Done</th>
+    <th>Section</th>
+    <th>Must include</th>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Introduction</td>
+    <td>App described, your name and flows stated, why these flows matter</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>User &amp; Task Analysis</td>
+    <td>Your assigned flow(s) overviews complete, step tables filled in, pain point log with severity ratings, top 3 identified</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Interface Evaluation</td>
+    <td>Method noted, findings table with H# codes and severity, 4+ annotated screenshots, summary names top 3 issues</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Design Proposals</td>
+    <td>3+ proposals, each with problem, change, rationale, trade-offs, Figma frame reference</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Prototype</td>
+    <td>Figma link works, both flows testable end-to-end, before/after screenshots alongside proposals</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>User Test</td>
+    <td>Method, task prompts, observation log, findings summary, reflection on whether issues were confirmed</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Reflection</td>
+    <td>Honest and specific - what you learned, what you would do differently, one thing you would change about your design now</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Navigation</td>
+    <td>All 7 sections reachable from the nav menu, nav works on a laptop screen without horizontal scrolling</td>
+  </tr>
+
+  <tr>
+    <td>✔</td>
+    <td>Readability</td>
+    <td>Headings used consistently, tables readable, screenshots have captions, no broken links</td>
+  </tr>
+</table>
+
+  </p>
 </section>
 
 
